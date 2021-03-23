@@ -1,6 +1,7 @@
 module JadenCasing where
 import qualified Data.Char as Char
 
+-- Recursive logic
 capitalizeFirstChar :: String -> String
 capitalizeFirstChar [] = []
 capitalizeFirstChar (head:tail) = Char.toUpper head : lowered tail
