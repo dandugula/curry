@@ -10,4 +10,4 @@ capitalizeFirstChar (head:tail) = Char.toUpper head : lowered tail
     lowered(head:tail) = Char.toLower head : lowered tail
 
 toJadenCase :: String -> String
-toJadenCase js = unwords $ map capitalizeFirstChar $ words js
+toJadenCase js = unwords . map capitalizeFirstChar $ words js
